@@ -1538,4 +1538,12 @@ func LinkLocalInsteadOfNh(dut *ondatra.DUTDevice) bool {
 func LowScaleAft(dut *ondatra.DUTDevice) bool {
 	return lookupDUTDeviations(dut).GetLowScaleAft()
 }
+<<<<<<< HEAD
 >>>>>>> 10137e2f (Adding deviations for scale, link-local and default network gateway (#4374))
+=======
+
+// MissingSystemDescriptionConfigPath returns true if device does not support config lldp system-description leaf
+func MissingSystemDescriptionConfigPath(dut *ondatra.DUTDevice) bool {
+	return lookupDUTDeviations(dut).GetMissingSystemDescriptionConfigPath()
+}
+>>>>>>> a1bee4d3 (core_lldp_tlv_population_test.go: correct portname and configure SystemDescription (#4404))
