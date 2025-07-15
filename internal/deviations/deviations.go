@@ -1523,7 +1523,19 @@ func ExplicitSwapSrcDstMacNeededForLoopbackMode(dut *ondatra.DUTDevice) bool {
 	return lookupDUTDeviations(dut).GetExplicitSwapSrcDstMacNeededForLoopbackMode()
 }
 
+<<<<<<< HEAD
 // DisableHardwareNexthopProxy returns true if device needs to disable proxying for nexthop groups in hardware
 func DisableHardwareNexthopProxy(dut *ondatra.DUTDevice) bool {
 	return lookupDUTDeviations(dut).GetDisableHardwareNexthopProxy()
 }
+=======
+// LinkLocalInsteadOfNh returns true if device requires link-local instead of NH.
+func LinkLocalInsteadOfNh(dut *ondatra.DUTDevice) bool {
+	return lookupDUTDeviations(dut).GetLinkLocalInsteadOfNh()
+}
+
+// LowScaleAft returns if device requires link-local instead of NH.
+func LowScaleAft(dut *ondatra.DUTDevice) bool {
+	return lookupDUTDeviations(dut).GetLowScaleAft()
+}
+>>>>>>> 10137e2f (Adding deviations for scale, link-local and default network gateway (#4374))

@@ -852,9 +852,18 @@ message Metadata {
     // Nokia b/430183279
     bool explicit_swap_src_dst_mac_needed_for_loopback_mode = 301;
 
+<<<<<<< HEAD
     // Arista b/422275961
     // disable hardware nexthop proxying
     bool disable_hardware_nexthop_proxy = 302;
+=======
+    // link_local_instead_of_nh is set to true for devices that give
+    // link-local address instead of NH in AFT.
+    bool link_local_instead_of_nh = 302;
+
+    // low_scale_aft returns true if device requires low scale AFT.
+    bool low_scale_aft = 303;
+>>>>>>> 10137e2f (Adding deviations for scale, link-local and default network gateway (#4374))
 
     // Reserved field numbers and identifiers.
     reserved 84, 9, 28, 20, 38, 43, 90, 97, 55, 89, 19, 36, 35, 40, 113, 131, 141, 173, 234, 254, 231;
