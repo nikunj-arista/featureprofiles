@@ -1602,3 +1602,7 @@ func PolicyRuleCountersOCUnsupported(dut *ondatra.DUTDevice) bool {
 func OTNToETHAssignment(dut *ondatra.DUTDevice) bool {
 	return lookupDUTDeviations(dut).GetOtnToEthAssignment()
 }
+// DisableHardwareNexthopProxy returns true if device needs to disable proxying for nexthop groups in hardware
+func DisableHardwareNexthopProxy(dut *ondatra.DUTDevice) bool {
+	return lookupDUTDeviations(dut).GetDisableHardwareNexthopProxy()
+}

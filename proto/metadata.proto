@@ -918,6 +918,9 @@ message Metadata {
     // Devices that must have OTN to ETH assignment.
     // Arista : https://partnerissuetracker.corp.google.com/issues/434922681
     bool otn_to_eth_assignment = 317;
+    // disable hardware nexthop proxying
+    // Arista : https://partnerissuetracker.corp.google.com/issues/422275961
+    bool disable_hardware_nexthop_proxy = 318;
 
     // Reserved field numbers and identifiers.
     reserved 84, 9, 28, 20, 38, 43, 90, 97, 55, 89, 19, 36, 35, 40, 113, 131, 141, 173, 234, 254, 231;
